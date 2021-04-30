@@ -29,8 +29,40 @@ Apache Kafka, which is maybe the most popular streaming service out there, and w
 
 Apache Kafka is a distributed streaming platform capable of handling trillions of events per day. Considering it's design, it gives you both the advantages of a queue message and a publish-subscriber service.
 
-### How it Works
+**How it Works**
 
 Kafka stores the events in topics. A topic is a logical split among the data, like a category. 
 
 https://github.com/tarathep/fundamental-kafka
+
+
+## Initialze Stack
+- Apache Kafka : https://kafka.apache.org/
+- Mongodb : https://www.mongodb.com/
+- NodeJS : https://nodejs.org/
+- .Net Core : https://dotnet.microsoft.com/
+
+## Data for Demo
+SOA-Portal-Service
+```sh
+curl --location --request POST 'http://localhost:3000/api/SOA/home/checkin' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "internetNo": "8850049302",
+    "orderNo": "5960915_106347524.2",
+    "staffCode": "cs_eng_ftth",
+    "jobStatus": "homecheckedin",
+    "checkinLatitude": 13.7827811,
+    "checkinLongitude": 100.5465937,
+    "checkinDate": "2021-03-18 10:13:43"
+}'
+```
+
+
+
+## More Details
+**NodeJS Choreography-based saga pettern**
+https://github.com/tarathep/nodejs-microservice-saga-pettern 
+
+**Kafka ASP .Net Core Event Driven Microservices**
+https://github.com/tarathep/kafka-asp-net-core-event-driven-microservices
